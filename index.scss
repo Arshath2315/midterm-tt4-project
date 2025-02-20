@@ -1,20 +1,12 @@
 // index.scss
 
+// Dependencies
 @import "./node_modules/bootstrap/scss/functions";
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/mixins";
-@import "./node_modules/bootstrap/scss/forms";
-@import "./node_modules/bootstrap/scss/buttons";
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
+// Card
+@import "./node_modules/bootstrap/scss/card";
 
-  .form-control {
-    border-radius: 0.5rem;
-  }
-
-  button {
-    width: 100%;
-  }
-}
+// Alert
+@import "./node_modules/bootstrap/scss/alert";

@@ -7,12 +7,12 @@ module.exports = {
   entry: {
     global: path.resolve(__dirname, "global.js"),
     index: path.resolve(__dirname, "index.js"),
-    listProducts: "./list-products.js",
-    addProducts: "./add-products.js",
+    // listProducts: "./list-products.js",
+    // addProducts: "./add-products.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
-    filename: "index.js",
+    filename: "[name].js",
     assetModuleFilename: "assets/[hash][ext][query]",
     clean: true,
   },
@@ -53,23 +53,23 @@ module.exports = {
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "index.css",
+      filename: "[name].css",
     }),
     new HtmlWebpackPlugin({
       template: "./index.html",
       chunks: ["global", "index"],
       filename: "index.html",
     }),
-    new HtmlWebpackPlugin({
-      template: "./list-products.html",
-      chunks: ["listProducts", "global"],
-      filename: "list-products.html",
-    }),
-    new HtmlWebpackPlugin({
-      template: "./add-products.html",
-      chunks: ["addProducts", "global"],
-      filename: "add-products.html",
-    }),
+    // new HtmlWebpackPlugin({
+    //   template: "./list-products.html",
+    //   chunks: ["listProducts", "global"],
+    //   filename: "list-products.html",
+    // }),
+    // new HtmlWebpackPlugin({
+    //   template: "./add-products.html",
+    //   chunks: ["addProducts", "global"],
+    //   filename: "add-products.html",
+    // }),
   ],
   optimization: {
     minimize: true,
