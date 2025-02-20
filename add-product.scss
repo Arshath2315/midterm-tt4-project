@@ -1,0 +1,21 @@
+@import "./node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/mixins";
+
+// Card styles
+.card {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+// Form inputs
+.form-control {
+    border-radius: 5px;
+}
+
+// Button
+.btn-primary {
+    width: 100%;
+}
